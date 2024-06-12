@@ -14,6 +14,11 @@ define('DB_USERNAME', getenv('DB_USERNAME'));
 define('DB_PASSWORD', getenv('DB_PASSWORD'));
 define('DB_NAME', getenv('DB_NAME'));
 
+print_r(getenv('DB_SERVER'));
+print_r(getenv('DB_USERNAME'));
+print_r(getenv('DB_PASSWORD'));
+print_r(getenv('DB_NAME'));
+
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
